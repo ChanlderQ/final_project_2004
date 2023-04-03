@@ -31,4 +31,4 @@ def get_prediction_result():
         return app.response_class(response=json.dumps(pre_weight[0]), status=500, mimetype='application/json')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000, use_reloader=False)
+    app.run(debug=True, host='0.0.0.0', use_reloader=False)
